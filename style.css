@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.wrapper {
+  display: flex;
+  gap: 30px;
+  font-size: 120px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 3px 3px 3px #000;
+  cursor: pointer;
+}
+.space {
+  margin-left: 30px;
+}
+.wrapper:hover span {
+  animation: smoke 5s linear forwards;
+}
+@keyframes smoke {
+  80% {
+    opacity: 0.8;
+    filter: blur(50px);
+    transform: rotate(30deg) translateY(-300px);
+  }
+  90% {
+    opacity: 0.5;
+    filter: blur(60px);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(70px);
+    transform: rotate(30deg) translateY(-300px);
+  }
+}
+.wrapper:hover span:nth-child(1) {
+  animation-delay: 2.4s;
+}
+.wrapper:hover span:nth-child(2) {
+  animation-delay: 2.1s;
+}
+.wrapper:hover span:nth-child(3) {
+  animation-delay: 1.8s;
+}
+.wrapper:hover span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.wrapper:hover span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.wrapper:hover span:nth-child(6) {
+  animation-delay: 0s;
+}
+.wrapper:hover span:nth-child(7) {
+  animation-delay: 0.9s;
+}
+.wrapper:hover span:nth-child(8) {
+  animation-delay: 0.6s;
+}
+.wrapper:hover span:nth-child(9) {
+  animation-delay: 0.3s;
+}
